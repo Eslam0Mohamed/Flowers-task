@@ -91,7 +91,7 @@ background-color: var(--background-color);
     color:black;
 }
 .landing{
- background-image:url('/images/download (6).jpeg');
+ background-image:url('../images/download\ \(6\).jpeg');
  background-size:cover;
  background-position: center;
  height: 100vh;
