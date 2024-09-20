@@ -227,6 +227,7 @@ display:block;
    .main-heading{
     font-size: 25px;
    }
+   /* no work  */
    .aboutus .main-heading::after {
     content: "";
     position: absolute;
@@ -236,9 +237,11 @@ display:block;
     width: 70px;
     height: 3px;
 }
+/* no work  */
 .collection-content{
+    gap: 20px;
     display: grid;
-    grid-template-columns: repeat(1,150px);
+    grid-template-columns: repeat(2, 150px);
     justify-content: center;
 }
 }
@@ -372,7 +375,7 @@ display:block;
 .collection {
     padding-top: var(--main-top-padding);
     padding-bottom: var(--main-bottom-padding);
-    display: flex;
+    /* display: flex; */
 }
 
 .collection .main-heading {
