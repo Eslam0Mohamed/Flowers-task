@@ -182,8 +182,15 @@ display:block;
 }
 
 /* *****************************mobile  responsive*/
-@media (max-width: 768px) {
-    /* header in tablet  */
+@media (max-width:768px) {
+    /* header in mobile  */
+body{
+    /* display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column;
+    justify-content: flex-start; */
+}
+
 
     .logo {
         order: 1;
@@ -209,26 +216,30 @@ display:block;
     }
 
     /* about us in mobile  */
-    .aboutus-box .main-heading {
-        /* not work  */
+    /* .aboutus-box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .aboutus .image {
         width: 300px;
+     
     }
 
     .aboutus .image::before {
         /* not work  */
         width: 300px;
-    }
-   .high-quality , .flowers-text{
+    } */
+   /* .high-quality , .flowers-text{
     font-size: 20px;
    }
    .main-heading{
     font-size: 25px;
-   }
+   } */
    /* no work  */
-   .aboutus .main-heading::after {
+   /* .aboutus .main-heading::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -236,14 +247,31 @@ display:block;
     background-color: #6e535a;
     width: 70px;
     height: 3px;
+} */
+
+
+.aboutus .image {
+    width: 300px;
+ 
 }
-/* no work  */
-.collection-content{
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 150px);
-    justify-content: center;
+.collection .collection-content{
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+.footer .container{
+display: flex;
+flex-direction: column;
+}
+.footer-data{
+    margin: 20px 0;
+}
+.data-name{
+    font-size: 20px;
+}
+
 }
 
 .aboutus {
@@ -275,7 +303,7 @@ display:block;
     justify-content: center;
     /* align-items: center; */
     gap: 30px;
-    border: 3px solid #6e535a;
+    border: 1px solid #6e535a;
 
 
 }
@@ -500,7 +528,7 @@ flex-wrap: no-wrap; */
 }
 
 .data-name {
-    font-size: 26px;
+    font-size: 25px
     color: black;
     margin: 0 0 10px 0;
 }
@@ -509,6 +537,7 @@ flex-wrap: no-wrap; */
     color: #6F545A;
     font-size: 20px;
     text-decoration: underline;
+    padding: 5px;
 }
 
 .footer-data:last-child ul li {
